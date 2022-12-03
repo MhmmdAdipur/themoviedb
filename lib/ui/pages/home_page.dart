@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   onSearch() {
+    // print(textEditingController.text.trim().isNotEmpty);
     if (textEditingController.text.trim().isNotEmpty) {
       FocusManager.instance.primaryFocus!.unfocus();
       if (textEditingController.text.trim().length < 3) {
@@ -35,7 +36,8 @@ class _HomePageState extends State<HomePage> {
             message: 'Keywords are too short, be more specific.',
             isError: true);
       } else {
-        Get.toNamed('${RouteName.search}/${textEditingController.text.trim()}');
+        var query = textEditingController.text.replaceAll(' ', '%20');
+        Get.toNamed('${RouteName.search}/$query');
       }
     }
   }
