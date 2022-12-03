@@ -1,0 +1,22 @@
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:get/get.dart';
+import 'package:shimmer/shimmer.dart';
+import 'package:themoviedb/extensions/extensions.dart';
+import 'package:themoviedb/models/models.dart';
+import 'package:themoviedb/shared/shared.dart';
+
+part 'custom_cache_image.dart';
+part 'custom_card_widget.dart';
+part 'custom_navbar_widget.dart';
+part 'custom_scroll_behavior.dart';
+part 'custom_tab_indicator.dart';
+part 'custom_text_field.dart';
+part 'loading_builder_widget.dart';
+part 'scroll_to_hide_widget.dart';
